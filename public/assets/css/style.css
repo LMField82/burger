@@ -1,0 +1,25 @@
+.container {
+    margin: 5px;
+    padding: 10px;
+    background-color: #EFAF4D;
+    font-family: monospace;
+    float: right;
+}
+
+body {
+    background-image: url("/assets/2663696.jpg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    
+    background-size: 100%; 
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.add-burger {
+    position: relative;
+    float: right;
+}

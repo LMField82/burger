@@ -1,13 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-		<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
-		<title>Eat A Burger!</title>
-		<script src="https://code.jquery.com/jquery.js"></script>
-		<script src="/assets/js/cats.js"></script>
-</head>
-<body>
-    {{{ body }}}
-</body>
-</html>
+
+
+
+<div class="container">
+    <h1>Eat the Burger!</h1>
+    
+        <div>
+            <ul class="burgers-list">
+                {{#each burgers}}
+                    {{#unless devoured}}
+                        
+                    <li>
+                        {{this.burger_name}}
+						<button type="button" class="change-eat btn btn-info" data-id="{{id}}" data-newBurger="{{burgers}}">
+								{{#if devoured}}EATEN!{{else}}EAT ME!{{/if}}
+						</button>
+					</li>
+                    {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+        <br><br>
+
+        <div class="devoured-list">
+            <h1>Ate the Burger!</h1>
+            <ul>
+                {{#each burgers}}
+                    {{#if devoured}}
+                         <li>{{this.burger_name}}</li>
+                    {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+
+    <br><br>
+    <div class="add-burger">
+    <h1>Add a Burger!</h1>
+    <form class="create-form">
+
+        <div class="form-group">
+            <label for="ca">Burger Name:</label>
+            <input type="text" id="ca" class="burger_id" name="burger_name" value = {{id}} >
+            <button class="btn" type="submit">ADD ME!</button>
+        </div>
+        {{!-- <div>
+            <label for="devoured">Devoured?</label><br>
+            <input type="radio" name="devoured" value="false" checked> EAT ME!
+            <input type="radio" name="devoured" value="true"> EATEN!
+        </div> --}}
+        
+    </form>
+    </div>
+    </div>
+</div>
+
+

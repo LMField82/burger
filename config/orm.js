@@ -27,10 +27,10 @@ function objToSql(ob) {
     return arr.toString();
 }
 
-const orm = {
+let orm = {
 
     selectAll: function(tableInput, cb) {
-        const queryString = "SELECT * FROM " + tableInput + ";";
+        let queryString = "SELECT * FROM " + tableInput + ";";
         connection.query(queryString, function(err, result) {
             if (err) {
                 throw err;
@@ -40,7 +40,7 @@ const orm = {
         });
     },
     insertOne: function(table, cols, vals, cb) {
-        const queryString = "INSERT INTO " + table;
+        let queryString = "INSERT INTO " + table;
 
         queryString += " (";
         queryString += cols.toString();
@@ -59,7 +59,7 @@ const orm = {
         });
     },
     updateOne: function(table, objColVals, condition, cb) {
-        const queryString = "UPDATE " + table;
+        let queryString = "UPDATE " + table;
 
         queryString += " SET ";
         queryString += objToSql(objColVals);
@@ -79,7 +79,25 @@ const orm = {
 
 
 
+    // selectAll: function(cb) {
+    //     connection.query(`SELECT * FROM burgers`, function(err, data) {
+    //         if (err) throw err;
+    //         cb(data);
+    //     });
+    // },
+    // insertOne: function(newBurger, cb) {
+    //     connection.query(`INSERT INTO burgers (burger_name) VALUES ('${newBurger}')`, function(err, data) {
+    //         if (err) throw err;
+    //         cb(data);
+    //     });
+    // },
+    // updateOne: function(id, cb) {
+    //     connection.query(`UPDATE burgers SET devoured = TRUE WHERE id = ${id}`, function(err, res) {
+    //         if (err) throw err;
+    //         cb(res);
+    //     });
+    // }
 
 
 
-module.exports = orm.js;
+module.exports = orm;

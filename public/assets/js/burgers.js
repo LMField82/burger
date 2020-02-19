@@ -18,33 +18,13 @@ $(document).ready(function() {
         });
 
     });
-
-//     $(".create-form").on("submit", function(event) {
-//         event.preventDefault();
-
-//         let newBurger = $("#ca").val().trim();
-
-//         $.ajax("/api/burgers", {
-//             type: "POST",
-//             data: newBurger
-//         }).then(function() {
-//             console.log(newBurger);
-//             location.reload();
-//         });
-
-//     });
-
-
-
-// });
-
     
     $(".create-form").on("submit", function(event) {
       event.preventDefault();
       var burger_data = { 
           burger_name: $(".burger_id").val().trim()
       }
-    //   console.log(burger_id);
+   
       $.ajax({
         method: "POST",
         url: "/api/burgers",

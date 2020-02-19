@@ -10,4 +10,4 @@ run an npm install to install needed dependencies.
 Background photo created by freepik - www.freepik.com
 
 ## image
-![](assets/burgerApp.png)
+![](public/assets/burgerApp.png)

@@ -1,17 +1,49 @@
-.container {
-    margin: 5px;
-    padding: 10px;
-    background-color: #EFAF4D;
-    font-family: monospace;
+h1 {
+    text-align: center;
+    position: relative;
+    right: 10%;
+    top: 10%;
+    margin-left: 80px;
+    padding-left: 40px;
+}
+
+.btn {
+    border: 1px solid black;
+    padding: 3px 2px 3px 2px;
+    color: black;
+    background-color: white;
+    margin: 6px;
+}
+
+.eat {
+   float: right;
+   text-align: left;
+   margin-left: 50%;
+}
+
+.devoured-list {
+   float: right;
+    clear: right;
+    padding-left: 250px;
+    text-align: left;
+    position: relative;
+    width: 100%;
+}
+
+.add-burger {
+    position: relative;
     float: right;
+    clear: both;
+    padding-right: 50px;
+    text-align: center;
 }
 
 body {
     background-image: url("/assets/2663696.jpg");
     background-position: center; 
     background-repeat: no-repeat;
-    
-    background-size: 100%; 
+    background-color: black;
+    background-size: cover; 
     color: white;
 }
 
@@ -19,7 +51,36 @@ ul {
     list-style-type: none;
 }
 
-.add-burger {
-    position: relative;
+.row {
     float: right;
+}
+
+
+.header {
+    margin-left: 40px;
+    padding-top: 30px;
+}    
+
+.footer {
+    background-color: red;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    /* height: 30px; */
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.link:hover {
+    color: gray;
+    font-size: 20px;
 }

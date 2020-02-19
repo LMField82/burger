@@ -1,28 +1,32 @@
 
 
-
+<div class="header"><h1>EAT A BURGER!</h1></div>
+        
 <div class="container">
-    <h1>Eat the Burger!</h1>
+<div class="row">
+    <div class="eat">
+    <h2>Eat a Burger!</h2>
     
-        <div>
+        <div class="col left">
+            
             <ul class="burgers-list">
                 {{#each burgers}}
                     {{#unless devoured}}
                         
                     <li>
                         {{this.burger_name}}
-						<button type="button" class="change-eat btn btn-info" data-id="{{id}}" data-newBurger="{{burgers}}">
+						<button type="button" class="change-eat btn" data-id="{{id}}" data-newBurger="{{burgers}}">
 								{{#if devoured}}EATEN!{{else}}EAT ME!{{/if}}
 						</button>
 					</li>
                     {{/unless}}
                 {{/each}}
             </ul>
+            </div>
         </div>
-        <br><br>
-
+    <div class="col right">
         <div class="devoured-list">
-            <h1>Ate the Burger!</h1>
+            <h2>Ate a Burger!</h2>
             <ul>
                 {{#each burgers}}
                     {{#if devoured}}
@@ -30,28 +34,21 @@
                     {{/if}}
                 {{/each}}
             </ul>
-        </div>
+        </div> 
     </div>
-
+    </div>
     <br><br>
     <div class="add-burger">
-    <h1>Add a Burger!</h1>
+    <h2>Add a Burger!</h2>
     <form class="create-form">
 
         <div class="form-group">
             <label for="ca">Burger Name:</label>
             <input type="text" id="ca" class="burger_id" name="burger_name" value = {{id}} >
-            <button class="btn" type="submit">ADD ME!</button>
+            <br><button class="btn" type="submit">ADD ME!</button>
         </div>
-        {{!-- <div>
-            <label for="devoured">Devoured?</label><br>
-            <input type="radio" name="devoured" value="false" checked> EAT ME!
-            <input type="radio" name="devoured" value="true"> EATEN!
-        </div> --}}
-        
     </form>
-    </div>
-    </div>
 </div>
-
+</div>   
+    <div class="footer">&copy Lindsay Field<br>Image by freepik <br><a class="link" href="www.freepik.com">www.freepik.com</a></div>
 

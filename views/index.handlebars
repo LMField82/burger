@@ -12,13 +12,12 @@
             <ul class="burgers-list">
                 {{#each burgers}}
                     {{#unless devoured}}
-                        
-                    <li>
-                        {{this.burger_name}}
-						<button type="button" class="change-eat btn" data-id="{{id}}" data-newBurger="{{burgers}}">
+                        <li>
+                            {{this.burger_name}}
+						    <button type="button" class="change-eat btn" data-id="{{id}}" data-newBurger="{{burgers}}">
 								{{#if devoured}}EATEN!{{else}}EAT ME!{{/if}}
-						</button>
-					</li>
+						    </button>
+					    </li>
                     {{/unless}}
                 {{/each}}
             </ul>
@@ -38,6 +37,8 @@
     </div>
     </div>
     <br><br>
+    <div class="row">
+        <div class="col">
     <div class="add-burger">
     <h2>Add a Burger!</h2>
     <form class="create-form">
@@ -48,6 +49,8 @@
             <br><button class="btn" type="submit">ADD ME!</button>
         </div>
     </form>
+    </div>
+</div>
 </div>
 </div>   
     <div class="footer">&copy Lindsay Field<br>Image by freepik <br><a class="link" href="www.freepik.com">www.freepik.com</a></div>

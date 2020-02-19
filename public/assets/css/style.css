@@ -18,15 +18,14 @@ h1 {
 
 .eat {
    float: right;
-   text-align: left;
-   margin-left: 50%;
+   margin-left: 45%;
 } 
 
 .add-burger {
     position: relative;
     float: right;
     clear: both;
-    padding-right: 25%;
+    padding-right: 15%;
     text-align: center;
 } 
 
@@ -43,8 +42,16 @@ ul {
     list-style-type: none;
 }
 
+h2 {
+    text-align: center;
+}
+
 .row .eat .devoured-list {
     float: right;
+}
+
+.form-group {
+    margin-left: 20px;
 }
 
 .header {

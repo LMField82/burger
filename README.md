@@ -7,5 +7,7 @@ This app allows the user to enter the name of a burger and it will appear in the
 run an npm install to install needed dependencies. 
 
 ## credit
-
 Background photo created by freepik - www.freepik.com
+
+## image
+![](public/burgerApp.png)

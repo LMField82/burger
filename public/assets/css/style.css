@@ -19,16 +19,16 @@ h1 {
    float: right;
    text-align: left;
    margin-left: 50%;
-}
+} 
 
-.devoured-list {
+/* .devoured-list {
    float: right;
     clear: right;
     padding-left: 250px;
     text-align: left;
     position: relative;
     width: 100%;
-}
+}*/
 
 .add-burger {
     position: relative;
@@ -36,7 +36,7 @@ h1 {
     clear: both;
     padding-right: 50px;
     text-align: center;
-}
+} 
 
 body {
     background-image: url("/assets/2663696.jpg");
@@ -51,10 +51,9 @@ ul {
     list-style-type: none;
 }
 
-.row {
+.row .eat .devoured-list {
     float: right;
 }
-
 
 .header {
     margin-left: 40px;
